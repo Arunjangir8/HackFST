@@ -1,0 +1,88 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-grow-up {
+    height: var(--bar-height) !important;
+    animation: growUp 0.5s ease-out;
+    transform-origin: bottom;
+  }
+
+  .animate-progress-fill {
+    width: var(--progress-width) !important;
+    animation: progressFill 0.7s ease-out;
+    transform-origin: left;
+  }
+
+  .animate-pie-reveal {
+    animation: pieReveal 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: calc(var(--animation-delay, 0) * 1s);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: calc(var(--animation-delay, 0) * 1s);
+  }
+}
+
+@keyframes growUp {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: var(--bar-height);
+    opacity: 1;
+  }
+}
+
+@keyframes progressFill {
+  0% {
+    width: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: var(--progress-width);
+    opacity: 1;
+  }
+}
+
+@keyframes pieReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
