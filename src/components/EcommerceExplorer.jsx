@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import SellerVisibilityBarGraph from './BarGraph';
 import PieGraph from './PieGraph';
 import ComparisonBar from './ComparisonBar';
+import img from "../assets/WhatsApp Image 2025-05-04 at 15.14.02.jpeg"
+import img1 from "../assets/Screenshot 2025-05-04 at 3.22.10 PM.png"
+
 
 const EcommerceExplorer = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -69,25 +72,25 @@ const EcommerceExplorer = () => {
       <nav className="bg-white shadow-md">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex overflow-x-auto space-x-4 py-4">
-            <button 
+            <button
               onClick={() => setActiveTab('overview')}
               className={`px-4 py-2 font-medium rounded-md whitespace-nowrap transition-colors duration-300 ${activeTab === 'overview' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
               Overview
             </button>
-            <button 
+            <button
               onClick={() => setActiveTab('challenges')}
               className={`px-4 py-2 font-medium rounded-md whitespace-nowrap transition-colors duration-300 ${activeTab === 'challenges' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
               Key Challenges
             </button>
-            <button 
+            <button
               onClick={() => setActiveTab('solutions')}
               className={`px-4 py-2 font-medium rounded-md whitespace-nowrap transition-colors duration-300 ${activeTab === 'solutions' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
               Solutions
             </button>
-            <button 
+            <button
               onClick={() => setActiveTab('cld')}
               className={`px-4 py-2 font-medium rounded-md whitespace-nowrap transition-colors duration-300 ${activeTab === 'cld' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
@@ -113,22 +116,22 @@ const EcommerceExplorer = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <PieGraph 
-                data={platformDominanceData} 
-                title="Market Share of Major E-Commerce Platforms" 
+              <PieGraph
+                data={platformDominanceData}
+                title="Market Share of Major E-Commerce Platforms"
               />
-              <PieGraph 
-                data={paymentMethodData} 
-                title="Supplier Payment Methods Used by Micro-Merchants" 
+              <PieGraph
+                data={paymentMethodData}
+                title="Supplier Payment Methods Used by Micro-Merchants"
               />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <SellerVisibilityBarGraph />
-              <ComparisonBar 
-                data={profitMarginData} 
-                title="Average Profit Margins (%)" 
-                unit="%" 
+              <ComparisonBar
+                data={profitMarginData}
+                title="Average Profit Margins (%)"
+                unit="%"
               />
             </div>
           </div>
@@ -169,14 +172,14 @@ const EcommerceExplorer = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <PieGraph 
-                data={digitalLiteracyData} 
-                title="Digital Literacy Among MSMEs (%)" 
+              <PieGraph
+                data={digitalLiteracyData}
+                title="Digital Literacy Among MSMEs (%)"
               />
-              <ComparisonBar 
-                data={CPCComparisonData} 
-                title="Facebook Ads Cost Per Click (USD)" 
-                unit="$" 
+              <ComparisonBar
+                data={CPCComparisonData}
+                title="Facebook Ads Cost Per Click (USD)"
+                unit="$"
               />
             </div>
 
@@ -309,56 +312,72 @@ const EcommerceExplorer = () => {
               <p className="text-gray-600 mb-4">
                 This space is reserved for your Causal Loop Diagram (CLD) and the visualization of reinforcing and balancing feedback loops in the e-commerce ecosystem.
               </p>
-              
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-400 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <h3 className="text-xl font-medium text-gray-600 mb-2">Upload Your CLD Here</h3>
-                <p className="text-gray-500 mb-4">Upload your Causal Loop Diagram image or visualization to this space</p>
+
+              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
+                <img
+                  src={img}
+                  alt="E-commerce Seller Dynamics"
+                  className=" object-cover h-[600px]"
+                />
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">Stock and Flow Diagram</h2>
+              <p className="text-gray-600 mb-4">
+              This section presents the Stock and Flow Diagram (SFD), illustrating the key stocks (resources or accumulations) and flows (rates of change) within the e-commerce ecosystem.
+              </p>
+
+              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
+                <img
+                  src={img1}
+                  alt="E-commerce Seller Dynamics"
+                  className=" object-cover h-[600px]"
+                />
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Key Feedback Loops Explained</h3>
-              
-              <div className="space-y-6">
-                <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.4s' }}>
-                  <h4 className="font-semibold text-blue-800">R1: Visibility and Revenue (Reinforcing Loop)</h4>
-                  <p className="text-gray-600 mt-2">
-                    Higher visibility increases customer traffic to seller pages. This boosts sales and generates more revenue, allowing sellers to invest in better photography, SEO optimization, and advertising. These improvements in turn raise visibility further. Platforms reward performance, turning this loop into a 'success trap' that often favors already-successful sellers.
-                  </p>
-                </div>
+  <h3 className="text-xl font-semibold mb-4 text-gray-800">Stock and Flow Dynamics in E-Commerce</h3>
 
-                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.5s' }}>
-                  <h4 className="font-semibold text-red-800">B1: Competition Loop (Balancing)</h4>
-                  <p className="text-gray-600 mt-2">
-                    As larger sellers dominate search rankings, smaller sellers see a decline in visibility. With fewer sales and limited resources, they struggle to compete. This dynamic perpetuates platform inequality where only top performers survive.
-                  </p>
-                </div>
+  <div className="space-y-6">
+    <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.4s' }}>
+      <h4 className="font-semibold text-blue-800">R1: Digital Literacy Feedback Loop (Reinforcing)</h4>
+      <p className="text-gray-600 mt-2">
+        Sellers with strong digital literacy skills improve listing quality and ad optimization. This increases revenue, enabling reinvestment in optimization efforts. Better operations and visibility further improve customer experience, reinforcing seller success.
+      </p>
+    </div>
 
-                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.6s' }}>
-                  <h4 className="font-semibold text-red-800">B2: Price Pressure Loop (Balancing)</h4>
-                  <p className="text-gray-600 mt-2">
-                    Large sellers can offer deep discounts during flash sales, bundling products or absorbing losses for market share. Small sellers can't match these prices, leading to customer attrition. Their margins shrink, eroding sustainability.
-                  </p>
-                </div>
+    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.5s' }}>
+      <h4 className="font-semibold text-red-800">B1: Operational Burden Loop (Balancing)</h4>
+      <p className="text-gray-600 mt-2">
+        As sellers improve their digital presence, operational demands like logistics and compliance also rise. This increases burden, which may reduce service quality and impact customer experience, balancing the positive effects of optimization.
+      </p>
+    </div>
 
-                <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.7s' }}>
-                  <h4 className="font-semibold text-blue-800">R2: Digital Literacy and Optimization (Reinforcing)</h4>
-                  <p className="text-gray-600 mt-2">
-                    Sellers with digital expertise can optimize listings, improve response times, and leverage analytics. This improves ratings and boosts visibility. Sellers without such skills experience lower engagement and worse algorithmic treatment.
-                  </p>
-                </div>
+    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.6s' }}>
+      <h4 className="font-semibold text-red-800">B2: Competition and Pricing Pressure (Balancing)</h4>
+      <p className="text-gray-600 mt-2">
+        Large sellers offer lower prices and discounts, drawing away customers from small sellers. This decreases their revenue and limits pricing flexibility, making it hard to sustain competitive customer experiences.
+      </p>
+    </div>
 
-                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.8s' }}>
-                  <h4 className="font-semibold text-red-800">B3: Operational Burden (Balancing)</h4>
-                  <p className="text-gray-600 mt-2">
-                    Small sellers often face high compliance demands (GST filings, packaging, return policies) and lack efficient logistics. These operational burdens reduce fulfillment quality, harming ratings and diminishing customer loyalty.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.7s' }}>
+      <h4 className="font-semibold text-blue-800">R2: Visibility-Experience Loop (Reinforcing)</h4>
+      <p className="text-gray-600 mt-2">
+        Enhanced visibility (driven by advertising and listing quality) improves customer experience and ratings. These in turn increase revenue and seller visibility even more, creating a reinforcing growth cycle for high-performing sellers.
+      </p>
+    </div>
+
+    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.8s' }}>
+      <h4 className="font-semibold text-red-800">B3: Rating Impact Loop (Balancing)</h4>
+      <p className="text-gray-600 mt-2">
+        A drop in customer experience reduces ratings, leading to lower visibility and fewer sales. This loop checks unsustainable growth and maintains a balance by rewarding consistently high service and penalizing poor performance.
+      </p>
+    </div>
+  </div>
+</div>
+
           </div>
         )}
       </main>
