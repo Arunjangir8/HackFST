@@ -5,6 +5,7 @@ import PieGraph from './PieGraph';
 import ComparisonBar from './ComparisonBar';
 import img from "../assets/WhatsApp Image 2025-05-04 at 15.14.02.jpeg"
 import img1 from "../assets/Screenshot 2025-05-04 at 3.22.10 PM.png"
+import video from "../assets/WhatsApp Video 2025-05-05 at 17.46.21.mp4"
 
 
 const EcommerceExplorer = () => {
@@ -113,6 +114,13 @@ const EcommerceExplorer = () => {
               <p className="text-gray-600">
                 However, the promise of digital inclusion often falls short. These sellers face persistent structural barriers—low visibility, inadequate digital literacy, aggressive competition from large sellers, and inflexible platform rules. Their journey is defined more by survival than growth, revealing a deep imbalance in the platform economy.
               </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
+              <video  controls>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -325,7 +333,7 @@ const EcommerceExplorer = () => {
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
               <h2 className="text-2xl font-bold mb-4 text-gray-800">Stock and Flow Diagram</h2>
               <p className="text-gray-600 mb-4">
-              This section presents the Stock and Flow Diagram (SFD), illustrating the key stocks (resources or accumulations) and flows (rates of change) within the e-commerce ecosystem.
+                This section presents the Stock and Flow Diagram (SFD), illustrating the key stocks (resources or accumulations) and flows (rates of change) within the e-commerce ecosystem.
               </p>
 
               <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
@@ -338,45 +346,45 @@ const EcommerceExplorer = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-  <h3 className="text-xl font-semibold mb-4 text-gray-800">Stock and Flow Dynamics in E-Commerce</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">Stock and Flow Dynamics in E-Commerce</h3>
 
-  <div className="space-y-6">
-    <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.4s' }}>
-      <h4 className="font-semibold text-blue-800">R1: Digital Literacy Feedback Loop (Reinforcing)</h4>
-      <p className="text-gray-600 mt-2">
-        Sellers with strong digital literacy skills improve listing quality and ad optimization. This increases revenue, enabling reinvestment in optimization efforts. Better operations and visibility further improve customer experience, reinforcing seller success.
-      </p>
-    </div>
+              <div className="space-y-6">
+                <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.4s' }}>
+                  <h4 className="font-semibold text-blue-800">R1: Digital Literacy Feedback Loop (Reinforcing)</h4>
+                  <p className="text-gray-600 mt-2">
+                    Sellers with strong digital literacy skills improve listing quality and ad optimization. This increases revenue, enabling reinvestment in optimization efforts. Better operations and visibility further improve customer experience, reinforcing seller success.
+                  </p>
+                </div>
 
-    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.5s' }}>
-      <h4 className="font-semibold text-red-800">B1: Operational Burden Loop (Balancing)</h4>
-      <p className="text-gray-600 mt-2">
-        As sellers improve their digital presence, operational demands like logistics and compliance also rise. This increases burden, which may reduce service quality and impact customer experience, balancing the positive effects of optimization.
-      </p>
-    </div>
+                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.5s' }}>
+                  <h4 className="font-semibold text-red-800">B1: Operational Burden Loop (Balancing)</h4>
+                  <p className="text-gray-600 mt-2">
+                    As sellers improve their digital presence, operational demands like logistics and compliance also rise. This increases burden, which may reduce service quality and impact customer experience, balancing the positive effects of optimization.
+                  </p>
+                </div>
 
-    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.6s' }}>
-      <h4 className="font-semibold text-red-800">B2: Competition and Pricing Pressure (Balancing)</h4>
-      <p className="text-gray-600 mt-2">
-        Large sellers offer lower prices and discounts, drawing away customers from small sellers. This decreases their revenue and limits pricing flexibility, making it hard to sustain competitive customer experiences.
-      </p>
-    </div>
+                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.6s' }}>
+                  <h4 className="font-semibold text-red-800">B2: Competition and Pricing Pressure (Balancing)</h4>
+                  <p className="text-gray-600 mt-2">
+                    Large sellers offer lower prices and discounts, drawing away customers from small sellers. This decreases their revenue and limits pricing flexibility, making it hard to sustain competitive customer experiences.
+                  </p>
+                </div>
 
-    <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.7s' }}>
-      <h4 className="font-semibold text-blue-800">R2: Visibility-Experience Loop (Reinforcing)</h4>
-      <p className="text-gray-600 mt-2">
-        Enhanced visibility (driven by advertising and listing quality) improves customer experience and ratings. These in turn increase revenue and seller visibility even more, creating a reinforcing growth cycle for high-performing sellers.
-      </p>
-    </div>
+                <div className="p-4 border-l-4 border-blue-500 bg-blue-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.7s' }}>
+                  <h4 className="font-semibold text-blue-800">R2: Visibility-Experience Loop (Reinforcing)</h4>
+                  <p className="text-gray-600 mt-2">
+                    Enhanced visibility (driven by advertising and listing quality) improves customer experience and ratings. These in turn increase revenue and seller visibility even more, creating a reinforcing growth cycle for high-performing sellers.
+                  </p>
+                </div>
 
-    <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.8s' }}>
-      <h4 className="font-semibold text-red-800">B3: Rating Impact Loop (Balancing)</h4>
-      <p className="text-gray-600 mt-2">
-        A drop in customer experience reduces ratings, leading to lower visibility and fewer sales. This loop checks unsustainable growth and maintains a balance by rewarding consistently high service and penalizing poor performance.
-      </p>
-    </div>
-  </div>
-</div>
+                <div className="p-4 border-l-4 border-red-500 bg-red-50 opacity-0 animate-slide-in" style={{ animationDelay: '0.8s' }}>
+                  <h4 className="font-semibold text-red-800">B3: Rating Impact Loop (Balancing)</h4>
+                  <p className="text-gray-600 mt-2">
+                    A drop in customer experience reduces ratings, leading to lower visibility and fewer sales. This loop checks unsustainable growth and maintains a balance by rewarding consistently high service and penalizing poor performance.
+                  </p>
+                </div>
+              </div>
+            </div>
 
           </div>
         )}
@@ -386,7 +394,7 @@ const EcommerceExplorer = () => {
       <footer className="bg-gray-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-semibold mb-4">Data Sources</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <h3 className="text-lg font-medium mb-2">Government & Industry Reports</h3>
               <ul className="text-gray-300 space-y-1 text-sm">
@@ -397,6 +405,16 @@ const EcommerceExplorer = () => {
                 <li>• IBEF.org: Indian Retail Sector</li>
                 <li>• NASSCOM: MSME Digital Adoption Survey</li>
                 <li>• InvestIndia.gov.in</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Team 83 :</h3>
+              <ul className="text-gray-300 space-y-1 text-sm">
+                <li>• Adarsh Vashistha  :  (Video)</li>
+                <li>• Arun              :  (Website)</li>
+                <li>• Pranjal Shukla    :  (Content)</li>
+                <li>• Ritik             :  (Content)</li>
+                <li>• Siddharth         :  (CLD)</li>
               </ul>
             </div>
             <div>
@@ -411,6 +429,7 @@ const EcommerceExplorer = () => {
           <div className="mt-6 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
             ©️ 2025 India E-commerce Ecosystem Analysis
           </div>
+          
         </div>
       </footer>
     </div>
