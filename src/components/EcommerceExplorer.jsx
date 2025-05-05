@@ -5,7 +5,6 @@ import PieGraph from './PieGraph';
 import ComparisonBar from './ComparisonBar';
 import img from "../assets/WhatsApp Image 2025-05-04 at 15.14.02.jpeg"
 import img1 from "../assets/Screenshot 2025-05-04 at 3.22.10 PM.png"
-import video from "../assets/WhatsApp Video 2025-05-05 at 17.46.21.mp4"
 
 
 const EcommerceExplorer = () => {
@@ -116,11 +115,15 @@ const EcommerceExplorer = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
-              <video  controls>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white p-6 h-[550px] rounded-lg shadow-md opacity-0 animate-fade-in">
+            <iframe
+        src="https://drive.google.com/file/d/1fzeJ__l5CI_0hD2NH2E4ZFItk1G7GAPQ/preview"
+        width="100%"
+        height="100%"
+        allow="autoplay"
+        allowFullScreen
+        title="Google Drive Video"
+      ></iframe>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -429,7 +432,7 @@ const EcommerceExplorer = () => {
           <div className="mt-6 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
             ©️ 2025 India E-commerce Ecosystem Analysis
           </div>
-          
+
         </div>
       </footer>
     </div>
