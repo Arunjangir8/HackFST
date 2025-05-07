@@ -335,16 +335,52 @@ const EcommerceExplorer = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
-            
+  <h2 className="text-2xl font-bold mb-4 text-gray-800">
+  BOT (Behavior Over Time) graph & Code
+  </h2>
 
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
-                <img
-                  src={graph}
-                  alt="E-commerce Seller Dynamics"
-                  className=" object-cover h-[600px]"
-                />
-              </div>
-            </div>
+  <p className="text-gray-600 mb-4">
+    Below is a Python code snippet using Matplotlib and NumPy to generate a Behavior Over Time (BOT) graph illustrating trends in revenue, customer experience, and competition:
+  </p>
+
+  <pre className="bg-gray-100 text-sm text-left text-gray-800 p-4 rounded-md overflow-x-auto mb-6">
+    <code>
+{`import matplotlib.pyplot as plt
+import numpy as np
+
+# Time axis (e.g., months)
+time = np.linspace(0, 12, 100)
+
+# Sample behavior curves
+revenue = np.log1p(time) * 10                 # Slow increase
+customer_experience = 50 + 10 * np.sin(time)  # Oscillating
+competition = 100 - np.sqrt(time) * 10        # Decreasing trend
+
+# Plotting
+plt.figure(figsize=(10, 6))
+
+plt.plot(time, revenue, label="Revenue", linewidth=2)
+plt.plot(time, customer_experience, label="Customer Experience", linewidth=2)
+plt.plot(time, competition, label="Competition from Large Seller", linewidth=2)
+
+plt.title("Behavior Over Time (BOT) Graph")
+plt.xlabel("Time (months)")
+plt.ylabel("Value")
+plt.grid(True)
+plt.legend()
+plt.show()`}
+    </code>
+  </pre>
+
+  <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
+    <img
+      src={graph}
+      alt="E-commerce Seller Dynamics"
+      className="object-cover h-[600px]"
+    />
+  </div>
+</div>
+
             
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
