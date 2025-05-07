@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import SellerVisibilityBarGraph from './BarGraph';
 import PieGraph from './PieGraph';
 import ComparisonBar from './ComparisonBar';
-import img from "../assets/WhatsApp Image 2025-05-04 at 15.14.02.jpeg"
+import img from "../assets/PHOTO-2025-05-07-21-49-48.jpg"
+import graph from "../assets/PHOTO-2025-05-07-19-16-35.jpg"
 import img1 from "../assets/Screenshot 2025-05-04 at 3.22.10 PM.png"
 
 
@@ -333,6 +334,17 @@ const EcommerceExplorer = () => {
               </div>
             </div>
 
+            <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
+            
+
+              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
+                <img
+                  src={graph}
+                  alt="E-commerce Seller Dynamics"
+                  className=" object-cover h-[600px]"
+                />
+              </div>
+            </div>
             
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
