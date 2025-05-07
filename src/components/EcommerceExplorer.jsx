@@ -333,20 +333,7 @@ const EcommerceExplorer = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">Stock and Flow Diagram</h2>
-              <p className="text-gray-600 mb-4">
-                This section presents the Stock and Flow Diagram (SFD), illustrating the key stocks (resources or accumulations) and flows (rates of change) within the e-commerce ecosystem.
-              </p>
-
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center flex justify-center items-center">
-                <img
-                  src={img1}
-                  alt="E-commerce Seller Dynamics"
-                  className=" object-cover h-[600px]"
-                />
-              </div>
-            </div>
+            
 
             <div className="bg-white p-6 rounded-lg shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Stock and Flow Dynamics in E-Commerce</h3>
